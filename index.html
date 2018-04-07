@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Gerador de™★Mario Silva©</title>
+<meta name="description" content="Você é preguiçoso demais pra copiar o nome do Silva e editar? Seus problemas acabaram.">	
+</head>	
+<style>
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #FFE200;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #dec500;
+}
+div.cu {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+h1 {
+    color:white;
+}
+    </style>	
+<body style="background-color:#202225;">
+<script>
+function output() {
+  document.getElementById("output").innerHTML = document.getElementById("first").value + "™★" + document.getElementById("second").value + "©";
+}
+</script>
+<div class="cu">
+<input type="text" id="first" placeholder="Mario" />
+<br>
+<input type="text" id="second" placeholder="Silva" />
+<br>
+<input type="submit" onclick="output()" />
+</div>
+<center>
+<h1 id="output"></h1>
+</center>
+</body>
+</html>
