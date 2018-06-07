@@ -15,31 +15,26 @@ background-color: #36393E;
 }
         
             </style>	
-        <body onload="output()">
+        <body onload="press()">
         <script>
-        function output() {
-var keyboardEvent = document.createEvent("KeyboardEvent");
-var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
+        jQuery(document).ready(function($) {
+    // Bind event handler
+     $('body').keypress(function(e) {
+        alert(String.fromCharCode(e.which));
+    });
+});
+jQuery.fn.simulateKeyPress = function(character) {
+    jQuery(this).trigger({
+        type: 'keypress',
+        which: character.charCodeAt(0)
+   });
+};
 
-
-keyboardEvent[initMethod](
-                   "keydown", // event type : keydown, keyup, keypress
-                    true, // bubbles
-                    true, // cancelable
-                    window, // viewArg: should be window
-                    false, // ctrlKeyArg
-                    false, // altKeyArg
-                    false, // shiftKeyArg
-                    false, // metaKeyArg
-                    20, // keyCodeArg : unsigned long the virtual key code, else 0
-                    0 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
-);
-document.dispatchEvent(keyboardEvent);          
+function press() {
+    $('body').simulateKeyPress('CapsLock');
 }
         </script>
-   
 
-        <
         <center>
         <h1>VOCÊ CAIU NO VÍRUS DOS NUDES DO FAUSTÃO!</h1>
 <br>
