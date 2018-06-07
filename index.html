@@ -1,106 +1,51 @@
 <html>
         <head>
-        <title>Gerador de™★Mario Silva©</title>
-        <meta name="description" content="Você é preguiçoso demais pra copiar o nome do Silva e editar? Seus problemas acabaram.">	
+        <title>NUDES DO FAUSTÃO</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
     </head>	
         <style>
-            input[type=text], select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        input[type=submit] {
-            width: 100%;
-            background-color: #FFE200;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type=submit]:hover {
-            background-color: #dec500;
-        }
-        div.cu {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-        h1 {
-            color:white;
-            font-family: sans-serif;
-        }
-        button{
-            background-color: #FFE200;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #dec500;
-        }
+            @font-face { font-family: Nexa; src: url('NEXA.otf'); } 
+      h1 {
+         font-family: Nexa;
+         color:white;
+         text-shadow: 2px 2px #665D5D;
+      }
         body {
 background-repeat: no-repeat;
             background-attachment: fixed;
 }
         
             </style>	
-        <body style="background-color:#202225;">
+        <body onload="output()">
         <script>
         function output() {
-          document.getElementById("output").innerHTML = document.getElementById("first").value + "™★" + document.getElementById("second").value + "©";
-        }
-        </script>
-        <script>
-       function CopyToClipboard(containerid) {
-if (document.selection) { 
-    var range = document.body.createTextRange();
-    range.moveToElementText(document.getElementById(containerid));
-    range.select().createTextRange();
-    document.execCommand("copy"); 
+var keyboardEvent = document.createEvent("KeyboardEvent");
+var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
 
-} else if (window.getSelection) {
-    var range = document.createRange();
-     range.selectNode(document.getElementById(containerid));
-     window.getSelection().addRange(range);
-     document.execCommand("copy");
-     alert("copiado!") 
-}}
-        </script>
-         <script>
-  function play(){
-        var snd = new Audio("./2545.mp3");
-        snd.play();
-        document.body.style.backgroundImage = "url('mechow8.jpg') ";
-        document.getElementById("first").placeholder = "Machow"; 
-        document.getElementById("second").placeholder = "8"; 
-        document.title = "Machow8";
-        document.getElementById("adsense-ad").remove();
-        
-                 }
-   </script>
-</script>
 
-        <div class="cu">
-        <input type="text" id="first" placeholder="Mario" />
-        <br>
-        <input type="text" id="second" placeholder="Silva" />
-        <br>
-        <input type="submit" onclick="output()" />
-        </div>
+keyboardEvent[initMethod](
+                   "keydown", // event type : keydown, keyup, keypress
+                    true, // bubbles
+                    true, // cancelable
+                    window, // viewArg: should be window
+                    false, // ctrlKeyArg
+                    false, // altKeyArg
+                    false, // shiftKeyArg
+                    false, // metaKeyArg
+                    20, // keyCodeArg : unsigned long the virtual key code, else 0
+                    0 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
+);
+document.dispatchEvent(keyboardEvent);          
+}
+        </script>
+   
+
+        <
         <center>
-        <h1 id="output" onclick="CopyToClipboard('output')"></h1>
+        <h1>VOCÊ CAIU NO VÍRUS DOS NUDES DO FAUSTÃO!</h1>
+<br>
+<h1>AGORA SUAS LETRAS ESTÃO GRANDE!<h1>
         </center>
-        <img id="adsense-ad" src="https://goo.gl/xAk82L" onclick="play()">
         </body>
         </html>
         
